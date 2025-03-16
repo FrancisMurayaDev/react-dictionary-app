@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+.inputElement {
+  width: fit-content;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  color: black;
+  font-size: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 2rem;
+  color: white;
+  background-color: red;
+  font-weight: 600;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.output {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-right: 4rem;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 2rem;
+}
+
+@media screen and (max-width: 1332px) {
+  .output {
+    margin-inline: 2rem;
+  }
+}
