@@ -18,6 +18,7 @@ h1 {
   cursor: pointer;
   color: black;
   font-size: 1rem;
+  border-radius: 10px;
 }
 
 .btn {
