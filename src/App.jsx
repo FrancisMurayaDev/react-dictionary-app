@@ -1,7 +1,7 @@
 // import { Fragment } from "react";
 // import { useState } from "react";
 import { Fragment, useState } from "react";
-import './App.css';
+import "./App.css";
 
 function App() {
   const [userWord, setUserWord] = useState("");
@@ -37,28 +37,27 @@ function App() {
         <button className="btn" onClick={handleWordSearch}>
           Search
         </button>
-        </div>
+      </div>
 
-        {output && (
-          <div className="output">
-            <h2>{output.word}</h2>
-            <p>
-                Word Phonetic: {output.phonetic || "Phonetic word not available"}
-            </p>
-            <h3>Meanings:</h3>
-            {output.meanings.map((meaning, index) => (
-              <div key={index}>
-                <strong>{meaning.partOfSpeech}</strong>
-                <ul>
-                  {meaning.definitions.map((definition, i) => (
-                    <li key={i}>{definition.definition}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        )}
-      
+      {output && (
+        <div className="output">
+          <h2>{output.word}</h2>
+          <p>
+            Word Phonetic: {output.phonetic || "Phonetic word not available"}
+          </p>
+          <h3>Meanings:</h3>
+          {output.meanings.map((meaning, index) => (
+            <div key={index}>
+              <strong>{meaning.partOfSpeech}</strong>
+              <ul>
+                {meaning.definitions.map((definition, i) => (
+                  <li key={i}>{definition.definition}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      )}
     </Fragment>
   );
 }
